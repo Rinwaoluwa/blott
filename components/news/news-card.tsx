@@ -59,7 +59,7 @@ export function NewsCard({ news }: NewsCardProps) {
         )}
       </div>
 
-      <div className="flex flex-col justify-start items-start md:block max-w-[300px] md:max-w-full md:mt-2">
+      <div className="flex flex-col justify-center items-start md:block max-w-[300px] md:max-w-full md:mt-2">
         <NewsCardMetadata source={news.source} datetime={news.datetime} />
         <NewsCardHeadline headline={news.headline} />
       </div>

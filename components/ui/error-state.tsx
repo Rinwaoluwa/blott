@@ -30,7 +30,7 @@ export function ErrorState({ title, message, onRetry }: ErrorStateProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="text-2xl font-semibold text-gray-900 mb-4"
+        className="text-2xl font-semibold text-white mb-4"
       >
         {title}
       </motion.h2>
@@ -39,7 +39,7 @@ export function ErrorState({ title, message, onRetry }: ErrorStateProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="text-gray-600 mb-8 max-w-md"
+        className="text-white mb-8 max-w-md"
       >
         {message}
       </motion.p>
@@ -52,9 +52,9 @@ export function ErrorState({ title, message, onRetry }: ErrorStateProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onRetry}
-          className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
+          className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-white/70 transition-colors duration-200"
         >
-          <RefreshCw size={18} />
+          <RefreshCw size={18} color="#000000" />
           Try Again
         </motion.button>
       )}

@@ -19,8 +19,8 @@ export async function NewsContainer() {
   } catch (error) {
     return (
       <ErrorState
-        title="Failed to Load News"
-        message="We're having trouble loading the latest news. Please check your connection and try again."
+        title=""
+        message="Something went wrong. Please try again later."
       />
     )
   }
